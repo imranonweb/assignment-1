@@ -26,14 +26,15 @@ nav ul {
     display: flex;
     justify-content: space-between;
     gap: 15px;
-    color: gray;
+    color: rgb(65, 63, 63);
 }
 
 nav button {
     border: none;
     background-color: blue;
     color: white;
-    padding: 10px 14px;
+    font-size: 18px;
+    padding: 15px 16px;
     border-radius: 8px;
     cursor: pointer;
 }
@@ -218,4 +219,190 @@ nav button {
 .price-child.team button{
     border-color: gray;
     color: black;
+}
+  
+/* PLACEHOLDER USING AI */
+
+
+.experience{
+    padding: 10px 15px 90px;
+}
+
+.experience-shell{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 34px;
+    border-radius: 28px;
+    background:
+        radial-gradient(circle at top left, rgba(45, 109, 246, 0.32), transparent 34%),
+        radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.9), rgba(10, 18, 32, 0.98));
+    color: #fff;
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    gap: 28px;
+    box-shadow: 0 30px 70px rgba(15, 23, 42, 0.22);
+}
+
+.experience-copy{
+    padding: 10px 6px;
+}
+
+.section-eyebrow,
+.card-kicker{
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.section-eyebrow{
+    color: #8fb6ff;
+    margin-bottom: 14px;
+}
+
+.experience-copy h2{
+    font-size: clamp(2.2rem, 4vw, 4rem);
+    line-height: 1;
+    max-width: 10ch;
+}
+
+.experience-copy > p{
+    max-width: 58ch;
+    margin-top: 16px;
+    color: #c9d3e4;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.experience-stats{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 28px;
+}
+
+.experience-stats div{
+    padding: 18px 16px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+}
+
+.experience-stats strong{
+    display: block;
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.experience-stats span{
+    color: #d9e2f3;
+    line-height: 1.45;
+}
+
+.experience-grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.experience-card{
+    min-height: 220px;
+    border-radius: 22px;
+    padding: 22px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.experience-card img{
+    width: 54px;
+    height: 54px;
+    object-fit: contain;
+    margin-bottom: auto;
+}
+
+.experience-card h3{
+    font-size: 1.45rem;
+    line-height: 1.15;
+}
+
+.experience-card p{
+    color: #cdd8ea;
+    line-height: 1.6;
+}
+
+.experience-card.highlight{
+    background: linear-gradient(145deg, rgba(37, 99, 235, 0.88), rgba(15, 29, 47, 0.95));
+}
+
+.experience-card.spotlight{
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    gap: 18px;
+}
+
+.experience-card.spotlight img{
+    width: 82px;
+    height: 82px;
+}
+
+@media (max-width: 900px){
+    .gallery,
+    .price-cards,
+    .experience-shell,
+    .experience-stats,
+    .experience-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .experience-card.spotlight{
+        grid-column: auto;
+        grid-template-columns: 1fr;
+    }
+}
+/* footer */
+
+footer{
+    background-color:#0f1d2f;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px 0;
+}
+
+.footer-brand{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 100px;
+}
+
+footer img{
+    height: 42px;
+    width: auto;
+}
+
+footer .dev,
+footer ul{
+    margin-right: 100px;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    gap: 18px;
+}
+
+footer .dev{
+    margin-left: 5px;
+    margin-right: 40px;
 }
